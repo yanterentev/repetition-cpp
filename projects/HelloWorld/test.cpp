@@ -12,9 +12,25 @@ int fibb(int i)
 	}
 	return cur;
 }
+
+int fourth_degree(int i)
+{
+	return i*i*i*i;
+}
+//число в  4ой степени
+
+//минимальное из трех чисел
+
 int main()
 {
 	std :: cout << fibb(3) << '\n';
 	std :: cout << fibb(5) << '\n';
 	std :: cout << fibb(7) << '\n';
+	std :: cout << fourth_degree(2) << '\n';
+	std :: cout << fourth_degree(3) << '\n';
+
+
+	/**/
+
+	/**********/
 }
