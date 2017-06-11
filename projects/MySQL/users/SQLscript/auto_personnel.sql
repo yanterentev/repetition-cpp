@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS  auto_personnels(
+INT id NOT NULL PRIMARY KEY AUTO_INCREMENT,
+first_name CHAR(10) NOT NULL,
+last_name CHAR(10) NOT NULL,
+pather_name CHAR(10) NOT NULL
+);
