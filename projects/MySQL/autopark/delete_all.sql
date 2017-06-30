@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS journals;
+DROP TABLE IF EXISTS autos;
+DROP TABLE IF EXISTS routes;
+DROP TABLE IF EXISTS auto_personnels;
