@@ -46,6 +46,11 @@ int min_value(int i, int j, int q)
 	return res;
 }
 //минимальное из трех чисел
+int fact(int i)
+{
+	 for(int i = 1; i < )
+}
+
 int main()
 {
 	std :: cout << fibb(3) << '\n';

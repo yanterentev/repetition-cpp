@@ -8,4 +8,6 @@ T tan_function(T x, T y)
 
 int main()
 {
+	std :: cout << tan_function(3, 4) << '\n';
+	std :: cout << tan_function(3.0, 4.0) << '\n';   
 }

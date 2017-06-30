@@ -31,7 +31,7 @@ void change_columns(int matrix[], int n, int m, int column1, int column2)
     {
         std :: swap(matrix[i * m + column1], matrix[i * m + column2]);
     }
-}
+} 
 
 void print(int matrix[], int n, int m)
 {

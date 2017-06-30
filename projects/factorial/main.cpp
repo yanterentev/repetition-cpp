@@ -31,7 +31,6 @@ int factIter(int n)
 	return res;
 }
 
-
 int main()
 {
 	std :: cout << "Рекурсия\n";

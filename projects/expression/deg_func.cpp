@@ -1,12 +1,11 @@
 #include<iostream>
 #include<cmath>
 
-int deg_func(int n, int k)
+double deg_func(int n, int k)
 {
-	int res = 0;
+	double res = 0;
 	for(int i = 1; i <= n; ++i)
 	{
-		std :: cout << res;
         res += pow(i, k);
 	}
 	return res;
