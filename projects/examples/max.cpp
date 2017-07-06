@@ -18,6 +18,13 @@ int main(int argc, char const *argv[])
 		}
 	}
 
+	for (int i = 0; i < N; ++i)
+	{
+		std :: cout << mas[i] << ' ';
+	}
+
+	std :: cout << '\n';
+
 	std :: cout << "max = " << max << '\n';
 
 	return 0;
