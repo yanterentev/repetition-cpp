@@ -1,28 +1,29 @@
 #include "worker.h"
 
-worker :: worker(std :: string surname, int expierence, int hourly_wage, int number_of_hours_worked) : surname("Ivanov"), expierence(0), hourly_wage(500), number_of_hours_worked(0)
-{
-}
-worker :: ~worker()
+worker :: worker(std :: string s, int e, int h, int n)
+: surname(s), expierence(e), hourly_wage(h), number_of_hours_worked(n)
 {
 }
 
-worker get_surname(std :: string surname)
+std :: string Worker :: get_surname() const
 {
 	return surname;
 }
 
-worker get_expierence(int expierence)
+int Worker :: get_expierence() const
 {
 	return expierence;
 }
 
-worker get_wage(int hourly hourly_wage)
+int Worker :: get_wage() const
 {
 	return hourly_wage;
 }
 
-worker get_hours_worked(int number_of_hours_worked)
+int Worker :: get_hours_worked()
 {
 	return number_of_hours_worked;
+}
+Worker :: ~worker()
+{
 }
