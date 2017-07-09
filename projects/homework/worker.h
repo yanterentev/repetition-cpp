@@ -1,21 +1,28 @@
 #ifndef WORKER_H
 #define WORKER_H
 
-class worker
+#include <iostream>
+#include <string>
+class Worker
 {
 public:
 
-	worker(std :: string surname, int expierence, int hourly_wage, int number_of_hours_worked);
-	
-	worker get_surname(std :: string surname);
-	worker get_expierence(int expierence);
-	worker get_wage(int hourly wage);
-	worker get_hours_worked(int number_of_hours_worked);
-    ~worker();
+	Worker(std :: string s, int e, int h, int n, std :: string l);
+	Worker(Worker& worker);
+	std :: string get_surname() const;
+	int get_expierence() const;
+	int get_wage() const;
+	int get_hours_worked() const;
+	std :: string get_last_name() const;
+     
+    bool operator ==(const Worker& worker) const;
+	friend std :: ostream& operator <<(std :: ostream& os, const Worker& worker);
+    ~Worker();
 private:
 	std :: string surname;
 	int expierence;
-	int hourly wage;
+	int hourly_wage;
 	int number_of_hours_worked;
+	std :: string last_name;
 };
 #endif
